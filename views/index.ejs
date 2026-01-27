@@ -15,10 +15,11 @@
         </thead>
         <% for (let iCount=0; iCount < aConcerts.length; iCount++) { %>
         <tr>
-            <td><%= aConcerts[iCount].location %></td>
+            <td><%= aConcerts[iCount].artist %> in <%= aConcerts[iCount].city %></td>
             <td><%= aConcerts[iCount].featured_donut %></td>
         </tr>
         <% } %>
     </table>
     </body>
 </html>
+<

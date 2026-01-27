@@ -11,7 +11,7 @@ const knex = require("knex")({
   host:"concert-db.c7yskgwweg95.us-east-2.rds.amazonaws.com",
   user: "admin",
   password: "password",
-  database:"paradise-concerts",
+  database:"concerts",
   port: 3306,
  },
 });
@@ -19,7 +19,7 @@ const knex = require("knex")({
 app.get("/",(req,res) => {
  knex
  .select()
- .from("venues")
+ .from("concerts")
  .then((result) => {
   res.render("index", {aConcerts: result});
  }); 
