@@ -11,7 +11,7 @@ const knex = require("knex")({
   host:"concert-db.c7yskgwweg95.us-east-2.rds.amazonaws.com",
   user: "admin",
   password: "password",
-  database:"paradise-concerts",
+  database:"concert",
   port: 3306,
  },
 });
