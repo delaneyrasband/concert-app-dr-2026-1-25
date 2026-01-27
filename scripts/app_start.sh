@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ec2-user/app
-export NVM_DIR="/home/ec2-user/.nvm" 
+cd /var/www/concert-app
+export NVM_DIR="/home/ubuntu/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-pm2 start index.js
+nohup node index.js > /var/log/concert-app.log 2>&1 &
