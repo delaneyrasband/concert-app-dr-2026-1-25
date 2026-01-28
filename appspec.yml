@@ -25,7 +25,7 @@ hooks:
       timeout: 300
       runas: ubuntu
 
-  BeforeInstall:
+  AfterInstall:
     - location: scripts/app_install.sh
       timeout: 300
       runas: ubuntu
